@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} 建立新貼文 {% endblock %}
+{% block content %}
+<hi align="center">建立新貼文</hi>
+<form method="post" enctype="multipart/form-data">
+    <textarea name="text" id="text" class="form-control"></textarea>
+
+<!--    <form method="POST" enctype="multipart/form-data"  action="{{ url_for('upload_file') }}">-->
+<!--        <input type="file" name="filename"  accept="image/*" required>-->
+<!--        <input type="submit" value="上傳">-->
+<!--    </form>-->
+
+    <div align="center">
+        <button type="submit" class="btn btn-lg btn-dark">張貼<i class="fa-solid fa-dog"></i></button>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<form method="post">
+    <h2 class="text-center">登入頁面</h2>
+    <div class="form-group">
+        <label for="email">電子郵件:</label>
+        <input type="text" class="form-control" id="email" name="email" class="form control" placeholder="Enter email" required>
+<!--        <label for="user">用戶名稱:</label>-->
+<!--        <input type="text" class="form-control" id="user" name="user" class="form control" placeholder="Enter name" required>-->
+        <label for="password">密碼:</label>
+        <input type="password" class="form-control" id="password" name="password" class="form control" placeholder="Enter password" required>
+        <br>
+        <button type="submit" class="btn btn-dark" type="submit">登入</button>
+    </div>
+</form>
+{% endblock %}

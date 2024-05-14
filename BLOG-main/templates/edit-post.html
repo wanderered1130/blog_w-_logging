@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} 編輯貼文 {% endblock %}
+{% block content %}
+<hi align="center">編輯貼文</hi>
+<form method="post">
+    <textarea name="text" id="text" class="form-control">{{ post.text }}</textarea>
+    <div align="center">
+        <button type="submit" class="btn btn-lg btn-dark">張貼<i class="fa-solid fa-dog"></i></button>
+    </div>
+</form>
+{% endblock %}
