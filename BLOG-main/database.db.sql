@@ -28,11 +28,11 @@ CREATE TABLE IF NOT EXISTS "comment" (
 	FOREIGN KEY("user_id") REFERENCES "database"("id") ON DELETE CASCADE
 );
 CREATE TABLE IF NOT EXISTS "log" (
-    "id" INTEGER NOT NULL PRIMARY KEY,
-    "user_id" INTEGER NOT NULL,
-    "action" VARCHAR(50) NOT NULL,
-    "timestamp" DATETIME NOT NULL,
-    FOREIGN KEY("user_id") REFERENCES "database"("id") ON DELETE CASCADE
+    	"id" INTEGER NOT NULL PRIMARY KEY,
+    	"user_id" INTEGER NOT NULL,
+    	"action" VARCHAR(50) NOT NULL,
+    	"timestamp" DATETIME NOT NULL,
+    	FOREIGN KEY("user_id") REFERENCES "database"("id") ON DELETE CASCADE
 );
 INSERT INTO "database" VALUES (1,'111','pbkdf2:sha256:260000$ngXqAz28YjCIPR1z$69f6a41798d7b6229abadc7f9537a5e10659b6cc6b202bdd6cd8380e6c9e0c58','111','2022-12-31 18:18:16');
 INSERT INTO "database" VALUES (2,'222','pbkdf2:sha256:260000$Te3CLlFws0h3l6BA$c242c5d6340e83363a84fe07418cb7b520d8c6ecf2b11a4a23441c9e4a5daeea','dengyi','2023-01-01 07:37:10');
